@@ -23,6 +23,8 @@
         </div>
         <div class="col-md-6 col-xs-12">
           <h2>Lista de Notas</h2>
+          <span v-if="lista.length > 0">Hay {{lista.length}} notas</span>
+          <span v-else="lista">No hay notas</span>
           <table class="table">
             <tr>
                 <th>Nombre</th>
